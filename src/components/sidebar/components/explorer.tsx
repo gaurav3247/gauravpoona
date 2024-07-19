@@ -9,7 +9,7 @@ import ThemeContext from '../../../contexts/ThemeContext';
 import TabsContext from '../../../contexts/TabsContext';
 import { listItemTextStyles } from '../../../utils';
 
-const Explorer = forwardRef((props, ref) => {
+const Explorer = forwardRef((_, ref) => {
   const { theme } = useContext(ThemeContext);
   const { addTab } = useContext(TabsContext);
   const [openDropdown, setOpenDropdown] = useState(true);
