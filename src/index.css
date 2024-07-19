@@ -1,0 +1,42 @@
+:root {
+  --main-bg-color: #1E1F1E;
+  --accent-color: #007acc;
+  --secondary-bg-color: #181919;
+  --main-text-color: #CCCDCD;
+  --icons-font-color: #868678;
+  --main-border-color: #585959;
+  --main-border-color-dark: #3D3E3D;
+  --main-border-color-darker: #2D2E2D;
+  --main-border-color-darkest: #1D1E1D;
+
+  --main-bg-color-light: #CCCDCD;
+  --secondary-bg-color-light: #E6E7E6;
+  --main-border-color-light: #7A7B7A;
+  --main-border-color-lighter: #8A8B8A;
+  --main-border-color-lightest: #9A9B9A;
+  --icons-font-color-light: #1E1F1E;
+  --main-text-color-light: #1E1F1E;
+
+  --main-font: 'Consolas', monospace;
+}
+
+body {
+  font-family: 'Consolas', monospace;
+  background-color: var(--main-bg-color);
+  color: var(--main-text-color);
+  margin: 0;
+  padding: 0;
+}
+
+
+/* Scrollbar styles */
+::-webkit-scrollbar {
+  background-color: transparent;
+  width: 7px;
+  height: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--main-border-color);
+  border-radius: 100px;
+}
