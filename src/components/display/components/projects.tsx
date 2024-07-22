@@ -5,7 +5,6 @@ import { Fade } from "react-awesome-reveal";
 import "react-responsive-carousel/lib/styles/carousel.min.css"
 import { Carousel } from "react-responsive-carousel";
 
-// import me from './../components/me.png';
 import { useIsMobile } from "../../../utils";
 
 interface Project{
