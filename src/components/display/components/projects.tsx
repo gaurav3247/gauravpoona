@@ -58,7 +58,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, direction }) => {
                                     component="img"
                                     height="300"
                                     width="400"
-                                    sx={{objectFit: project.title === 'Kick Live' ? 'contain' : 'fill'}}
+                                    sx={{objectFit: project.title === 'Kick Live' || project.title === 'NeuralNet' ? 'contain' : 'fill'}}
                                     src={image}
                                     alt={project.title}
                                     />
@@ -123,7 +123,7 @@ const Projects = () => {
             title: 'NeuralNet',
             description: 'Neural Net is a Python framework for building and training neural networks on various datasets. Created primarily as a means to learn more about deep learning, it allows users to develop and train custom neural models and use optimization algorithms like stochastic descent, mini-batch descent, momentum, RMSProp, and Adam.',
             github: 'https://github.com/gaurav3247/neural-net',
-            images: ['kicklive-white.png'],
+            images: ['neural-net.png'],
             techStack: 'Numpy, Pandas, Matplotlib',
         }
     ]

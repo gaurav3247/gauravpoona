@@ -79,60 +79,11 @@ const Landing = () => {
     const [firstAnimationComplete, setFirstAnimationComplete] = useState(false);
     const [secondAnimationComplete, setSecondAnimationComplete] = useState(false);
 
-    const hasPlayed = sessionStorage.getItem('animationPlayed');
     const isMobile = useIsMobile();
 
     function animationComplete() {
         setSecondAnimationComplete(true);
-        sessionStorage.setItem('animationPlayed', 'true');
     }
-
-    if (hasPlayed) {
-        return (
-            <Box
-                sx={{
-                    display: 'flex',
-                    flexDirection: 'column',
-                    alignItems: 'center',
-                    justifyContent: 'center',
-                    textAlign: 'center',
-                    padding: '2rem',
-                }}
-            >
-                <Box>
-                    <Typography style={{ fontSize: isMobile ? '1.5rem' : '2rem' }}>
-                        Hey I'm
-                    </Typography>
-                    <Typography style={{ fontSize: isMobile ? '3rem' : '4rem', color: 'var(--accent-color)' }}>
-                        Gaurav Poona.
-                    </Typography>
-                </Box>
-                <Divider 
-                    style={{
-                        width: '50%',
-                        margin: '1rem 0',
-                        backgroundColor: 'var(--accent-color)',
-                }}/>
-                <Box>
-                    <p style={{fontSize: 16}}>
-                        Welcome to my personal website! <br />
-                        Use the <span style={{ color: 'var(--accent-color)' }}>sidebar</span> to navigate through the different sections and learn more about me.
-                    </p>
-                </Box>
-                <Box
-                    sx={{
-                        marginTop: '2rem',
-                        width: isMobile ? '115%' : '75%',
-                    }}>
-                    <h1 style={{textAlign: 'left'}}>
-                        Help
-                    </h1>
-                    <HelpBox isMobile={isMobile}/>
-                </Box>
-            </Box>
-        );
-    }
-
 
     return (
         <>
