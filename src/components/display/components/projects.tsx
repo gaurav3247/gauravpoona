@@ -41,8 +41,8 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, direction }) => {
                     <code style={{color: 'var(--accent-color)', fontSize: '24px', fontWeight: 'bold'}}>{`<${project.title}>`}</code>
                     <Card
                     sx={{
-                        width: 575,
-                        height: 575,
+                        width: '5rem',
+                        height: '5rem',
                         ":hover": {
                             border: '1px solid var(--main-bg-color-light)',
                             opacity: '0.9',
@@ -56,8 +56,8 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, direction }) => {
                                 <CardMedia
                                     key={index}
                                     component="img"
-                                    height="300"
-                                    width="400"
+                                    height="50%"
+                                    width="100%"
                                     sx={{objectFit: project.title === 'Kick Live' || project.title === 'NeuralNet' ? 'contain' : 'fill'}}
                                     src={image}
                                     alt={project.title}
@@ -142,9 +142,7 @@ const Projects = () => {
                     alignItems: 'center',
                 }}>
                 {projects.map((project: Project, index) => (
-                    <div key={index}>
-                        <ProjectCard project={project} direction={(index % 2 == 0) ? 'up' : 'up'} />
-                    </div>
+                    <ProjectCard project={project} direction={(index % 2 == 0) ? 'up' : 'up'} />
                 ))}
             </Box>
         </div>
