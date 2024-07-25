@@ -1,0 +1,13 @@
+/* CarouselStyles.css */
+.carousel .control-dots .dot {
+    background-color: #333; /* Darker color for the dots */
+  }
+  
+  .carousel .thumb {
+    border-color: #333; /* Darker color for the thumbnail border */
+  }
+  
+  .carousel .thumb.selected, .carousel .thumb:hover {
+    border-color: #555; /* Even darker color for selected or hovered thumbnails */
+  }
+  

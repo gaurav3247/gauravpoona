@@ -3,6 +3,7 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import LaunchIcon from '@mui/icons-material/Launch';
 import { Fade } from "react-awesome-reveal";
 import "react-responsive-carousel/lib/styles/carousel.min.css"
+import './carouselStyles.css';
 import { Carousel } from "react-responsive-carousel";
 
 import { useIsMobile } from "../../../utils";
@@ -40,8 +41,8 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, direction }) => {
                     <code style={{color: 'var(--accent-color)', fontSize: '24px', fontWeight: 'bold'}}>{`<${project.title}>`}</code>
                     <Card
                     sx={{
-                        width: '5rem',
-                        height: '5rem',
+                        width: 575,
+                        height: 575,
                         ":hover": {
                             border: '1px solid var(--main-bg-color-light)',
                             opacity: '0.9',
@@ -50,12 +51,12 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, direction }) => {
                         opacity: isMobile ? '1' : '0.8',
                         borderRadius: '1rem',
                         }}>
-                        <Carousel showThumbs={false} showStatus={false} infiniteLoop={project.title === 'Easy Chef' ? false : true} autoPlay={false} interval={5000}>
+                        <Carousel showThumbs={true} showStatus={true} infiniteLoop={true} autoPlay={false} interval={5000}>
                             {project.images.map((image, index) => (
                                 <CardMedia
                                     key={index}
                                     component="img"
-                                    height="50%"
+                                    height="300px"
                                     width="100%"
                                     sx={{objectFit: project.title === 'Kick Live' || project.title === 'NeuralNet' ? 'contain' : 'fill'}}
                                     src={image}
