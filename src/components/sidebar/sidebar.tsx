@@ -8,12 +8,11 @@ import EmailIcon from '@mui/icons-material/Email';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import { FaRegCopy } from "react-icons/fa";
-import { IoMdContact } from "react-icons/io";
 import { IoMdSettings } from "react-icons/io";
 import { FaReact } from "react-icons/fa";
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
-import { Button, Divider, Typography, ListItemText } from '@mui/material';
+import { Divider, ListItemText } from '@mui/material';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import Switch from '@mui/material/Switch';
 
@@ -37,9 +36,6 @@ const Sidebar = ({ isExplorerVisible, setExplorerVisible }: SidebarProps) => {
 
     const isMobile = useIsMobile();
 
-    const [contactAnchorEl, setContactAnchorEl] = useState<null | HTMLElement>(null);
-    const contactOpen = Boolean(contactAnchorEl);
-    
     const [explorerAnchorEl, setExplorerAnchorEl] = useState<null | HTMLElement>(null);
     const explorerMenuOpen = Boolean(explorerAnchorEl);
 
@@ -48,10 +44,6 @@ const Sidebar = ({ isExplorerVisible, setExplorerVisible }: SidebarProps) => {
 
     const handleExplorer = (event: React.MouseEvent<HTMLElement>) => {
         setExplorerAnchorEl(event.currentTarget);
-    };
-
-    const handleContact = (event: React.MouseEvent<HTMLElement>) => {
-      setContactAnchorEl(event.currentTarget);
     };
 
     const handleSettings = (event: React.MouseEvent<HTMLElement>) => {
@@ -63,11 +55,6 @@ const Sidebar = ({ isExplorerVisible, setExplorerVisible }: SidebarProps) => {
         setActiveSidebar(isExplorerVisible ? 1 : 0)
     };
 
-    const handleContactClose = () => {
-      setContactAnchorEl(null);
-      setActiveSidebar(isExplorerVisible ? 1 : 0)
-    };
-
     const handleSettingsClose = () => {
       setSettingsAnchorEl(null);
       setActiveSidebar(isExplorerVisible ? 1 : 0)
@@ -77,9 +64,6 @@ const Sidebar = ({ isExplorerVisible, setExplorerVisible }: SidebarProps) => {
         setActiveSidebar(id)
         if (id == 1) {
             isMobile ? handleExplorer(e) : setExplorerVisible(!isExplorerVisible)
-        }
-        else if (id == 2) {
-            handleContact(e)
         }
         else if (id == 4) {
             handleSettings(e)
@@ -124,48 +108,15 @@ const Sidebar = ({ isExplorerVisible, setExplorerVisible }: SidebarProps) => {
                         <ListItemText primary="resume.pdf" primaryTypographyProps={{...listItemTextStyles, fontSize: 16, paddingLeft: '0.5rem'}} />
                     </MenuItem>
                 </Menu>
-                <IconButton onClick={(e) => handleClick(e, 2)} title='Connect with me!'>
-                    <IoMdContact  className={(activeSidebar == 2) ? 'icon active' : 'icon'} style={{padding: '0.2rem', fontSize: '28px'}} />
+                <IconButton title='Connect with me!' href='https://www.linkedin.com/in/gaurav-poona/' target='_blank'>
+                    <LinkedInIcon className={(activeSidebar == 2) ? 'icon active' : 'icon'} style={{padding: '0.2rem', fontSize: '28px'}} />
                 </IconButton>
-                <Menu
-                    id="contact-positioned-menu"
-                    aria-labelledby="contact-positioned-button"
-                    anchorEl={contactAnchorEl}
-                    open={contactOpen}
-                    onClose={handleContactClose}
-                    anchorOrigin={{
-                        vertical: isMobile ? 'bottom' : 'center',
-                        horizontal: isMobile ? 'center' : 'right',
-                    }}
-                    transformOrigin={{
-                        vertical: 'top',
-                        horizontal: isMobile ? 'center' : 'left',
-                    }}
-                >
-                    <MenuItem style={{padding: '0 1rem 0 0.5rem'}}>
-                        <Button title='Email'
-                            startIcon={<EmailIcon style={{fontSize: '28px'}} />}
-                            href='mailto:gauravpoona3247@gmail.com'
-                            target='_blank' />
-                        <Typography style={{...listItemTextStyles, fontSize: 16, color: 'var(--main-text-color-light)'}}>Email</Typography>
-                    </MenuItem>
-                    <Divider />
-                    <MenuItem style={{padding: '0 1rem 0 0.5rem'}}>
-                        <Button title='LinkedIn'
-                            startIcon={<LinkedInIcon style={{fontSize: '28px'}} />}
-                            href='https://www.linkedin.com/in/gaurav-poona/'
-                            target='_blank' />
-                        <Typography style={{...listItemTextStyles, fontSize: 16, color: 'var(--main-text-color-light)'}}>LinkedIn</Typography>
-                    </MenuItem>
-                    <Divider />
-                    <MenuItem style={{padding: '0 1rem 0 0.5rem'}}>
-                        <Button title='GitHub'
-                            startIcon={<GitHubIcon style={{fontSize: '32px', color:"#1c1c1c"}} />}
-                            href='https://github.com/gaurav3247'
-                            target='_blank' />
-                        <Typography style={{...listItemTextStyles, fontSize: 16, color: 'var(--main-text-color-light)'}}>GitHub</Typography>
-                    </MenuItem>
-                </Menu>
+                <IconButton title='Email me!' href='mailto:gauravpoona3247@gmail.com'>
+                    <EmailIcon className={(activeSidebar == 2) ? 'icon active' : 'icon'} style={{padding: '0.2rem', fontSize: '28px'}} />
+                </IconButton>
+                <IconButton title='Check out my projects!' href='https://github.com/gaurav3247' target='_blank'>
+                    <GitHubIcon className={(activeSidebar == 2) ? 'icon active' : 'icon'} style={{padding: '0.2rem', fontSize: '28px'}} />
+                </IconButton>
                 {/* <IconButton onClick={(e) => handleClick(e, 3)} title='Search'>
                     <SearchIcon className={(activeSidebar == 3) ? 'icon active' : 'icon'} style={{fontSize: '32px', }} />
                 </IconButton> // Implement search feature*/} 
