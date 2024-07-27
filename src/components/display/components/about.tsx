@@ -40,7 +40,7 @@ const About = () => {
                     </p>
                 </Box>
                 <Box sx={{ flex: '1 1 500px', minWidth: '50%', height: '100%', display: 'flex', justifyContent: 'center', alignItems: 'start', marginBottom: '2rem' }}>
-                    <Avatar src='me.png' sx={{ height: '50%', width: '50%', objectFit: 'contain' }} alt="Gaurav Poona" />
+                    <Avatar src='me.webp' sx={{ height: '50%', width: '50%', objectFit: 'contain' }} alt="Gaurav Poona" />
                 </Box>
             </Box>
 
