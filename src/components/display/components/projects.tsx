@@ -100,7 +100,7 @@ const Projects = () => {
             title: 'Decidophobia',
             description: 'Decidophobia is an eCommerce website that aggregates and rates product information from numerous shopping websites. Aimed at simplifying decision-making for shoppers overwhelmed by choices, Decidophobia provides detailed reviews and ratings. By centralizing product data, it helps consumers make informed and confident purchasing decisions.',
             github: 'https://github.com/cfstar188/Decidophobia.com',
-            images: ['decidophobia.png', 'decidophobia_home.png', 'decidophobia_search.png', 'decidophobia_cart.png', 'decidophobia_orderhistory.png'],
+            images: ['decidophobia.webp', 'decidophobia_home.webp', 'decidophobia_search.webp', 'decidophobia_cart.webp', 'decidophobia_orderhistory.webp'],
             techStack: 'Next.js, TypeScript, Django, PostgreSQL',
         },
         {
@@ -115,7 +115,7 @@ const Projects = () => {
             title: 'Kick Live',
             description: 'Kick Live is a web application for football enthusiasts that delivers real-time scores and detailed information from around the world. Users can explore match results, statistics, and track their favorite teams and leagues. With its comprehensive and user-friendly interface, Kick Live makes it easy to stay updated on all your football needs.',
             github: 'https://github.com/vp610/smarTrack',
-            images: ['kicklive-white.png'],
+            images: ['kicklive-white.webp'],
             techStack: 'Next.js, Flask, Redis',
             link: 'https://kick-live-nqnl.onrender.com/'
         },
@@ -123,7 +123,7 @@ const Projects = () => {
             title: 'NeuralNet',
             description: 'Neural Net is a Python framework for building and training neural networks on various datasets. Created primarily as a means to learn more about deep learning, it allows users to develop and train custom neural models and use optimization algorithms like stochastic descent, mini-batch descent, momentum, RMSProp, and Adam.',
             github: 'https://github.com/gaurav3247/neural-net',
-            images: ['neural-net.png'],
+            images: ['neural-net.webp'],
             techStack: 'Numpy, Pandas, Matplotlib',
         }
     ]
