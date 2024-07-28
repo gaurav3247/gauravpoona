@@ -2,11 +2,13 @@ import { useState } from 'react';
 import { Box, Divider, Typography } from '@mui/material';
 import Grow from '@mui/material/Grow';
 import { TypeAnimation } from 'react-type-animation';
-// import AccountCircleIcon from '@mui/icons-material/AccountCircle';
-// import SettingsIcon from '@mui/icons-material/Settings';
 import { FaRegCopy } from "react-icons/fa";
 import { IoMdContact } from "react-icons/io";
 import { IoMdSettings } from "react-icons/io";
+import { IoLogoLinkedin } from "react-icons/io";
+import { IoLogoGithub } from "react-icons/io";
+import { MdEmail } from "react-icons/md";
+import GitHubIcon from '@mui/icons-material/GitHub';
 
 import { useIsMobile } from "../../../utils";
 
@@ -49,10 +51,38 @@ const HelpBox = ({ isMobile } : {
                         gap: '0.5rem',
                     }}>
                     <Box sx={{ minWidth: '3rem', display: 'flex', justifyContent: 'start', margin: '0rem' }}>
-                        <IoMdContact style={{ fontSize: isMobile ? '2rem' : '1.5rem' }} />
+                        <IoLogoLinkedin style={{ fontSize: isMobile ? '2rem' : '1.5rem' }} />
                     </Box>
                     <Typography fontFamily={'Consolas, monospace'}>
-                        <span style={{color: 'var(--accent-color)'}}>Contact</span>: Find my contact information and other links (email, LinkedIn, Github).
+                        <span style={{color: 'var(--accent-color)'}}>LinkedIn</span>: Connect with me on LinkedIn.
+                    </Typography>
+                </Box>
+                <Box
+                    sx={{
+                        display: 'flex',
+                        flexDirection: 'row',
+                        alignItems: 'center',
+                        gap: '0.5rem',
+                    }}>
+                    <Box sx={{ minWidth: '3rem', display: 'flex', justifyContent: 'start', margin: '0rem' }}>
+                        <MdEmail style={{ fontSize: isMobile ? '2rem' : '1.5rem' }} />
+                    </Box>
+                    <Typography fontFamily={'Consolas, monospace'}>
+                        <span style={{color: 'var(--accent-color)'}}>Email</span>: Send me an email.
+                    </Typography>
+                </Box>
+                <Box
+                    sx={{
+                        display: 'flex',
+                        flexDirection: 'row',
+                        alignItems: 'center',
+                        gap: '0.5rem',
+                    }}>
+                    <Box sx={{ minWidth: '3rem', display: 'flex', justifyContent: 'start', margin: '0rem' }}>
+                        <IoLogoGithub style={{ fontSize: isMobile ? '2rem' : '1.5rem' }} />
+                    </Box>
+                    <Typography fontFamily={'Consolas, monospace'}>
+                        <span style={{color: 'var(--accent-color)'}}>Github</span>: Checkout my Github.
                     </Typography>
                 </Box>
                 <Box
