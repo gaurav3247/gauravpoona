@@ -3,12 +3,10 @@ import { Box, Divider, Typography } from '@mui/material';
 import Grow from '@mui/material/Grow';
 import { TypeAnimation } from 'react-type-animation';
 import { FaRegCopy } from "react-icons/fa";
-import { IoMdContact } from "react-icons/io";
 import { IoMdSettings } from "react-icons/io";
 import { IoLogoLinkedin } from "react-icons/io";
 import { IoLogoGithub } from "react-icons/io";
 import { MdEmail } from "react-icons/md";
-import GitHubIcon from '@mui/icons-material/GitHub';
 
 import { useIsMobile } from "../../../utils";
 
