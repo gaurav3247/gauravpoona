@@ -41,8 +41,8 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, direction }) => {
                     <code style={{color: 'var(--accent-color)', fontSize: '24px', fontWeight: 'bold'}}>{`<${project.title}>`}</code>
                     <Card
                     sx={{
-                        width: 575,
-                        height: 575,
+                        width: '90%',
+                        height: '100%',
                         ":hover": {
                             border: '1px solid var(--main-bg-color-light)',
                             opacity: '0.9',
@@ -64,7 +64,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, direction }) => {
                                     />
                             ))}
                         </Carousel>
-                        <CardContent>
+                        <CardContent sx={{ marginTop: '-4rem'}}>
                             <Typography variant="body1" color="text.secondary" textAlign={'center'} fontFamily={'var(--main-font)'}>
                                 {project.description}
                             </Typography>
@@ -133,13 +133,11 @@ const Projects = () => {
             <h1><code style={{color: 'var(--accent-color)'}}>{`<projects />`}</code></h1>
             <Box
                 sx={{
-                    display: 'flex',
-                    flexDirection: 'row',
-                    flexWrap: 'wrap',
-                    gap: '2rem',
+                    display: 'grid',
+                    gridTemplateColumns: { xs: '1fr', sm: '1fr 1fr', md: '1fr 1fr' },
+                    columnGap: '0.5rem',
+                    rowGap: '2rem',
                     padding: '1rem 0',
-                    justifyContent: 'center',
-                    alignItems: 'center',
                 }}>
                 {projects.map((project: Project, index) => (
                     <ProjectCard project={project} direction={(index % 2 == 0) ? 'up' : 'up'} />

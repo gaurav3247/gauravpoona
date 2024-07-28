@@ -11,7 +11,7 @@ const About = () => {
                 alignItems: 'center',
                 justifyContent: 'center',
                 flexWrap: 'wrap-reverse',
-                paddingLeft: '6rem',
+                // paddingLeft: '6rem',
                 paddingTop: '1rem',
                 paddingBottom: '1rem',
             }}>

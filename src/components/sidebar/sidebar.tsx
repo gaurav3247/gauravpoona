@@ -35,6 +35,9 @@ const Sidebar = ({ isExplorerVisible, setExplorerVisible }: SidebarProps) => {
     const { activeSidebar, setActiveSidebar } = useContext(ActiveContext)
 
     const isMobile = useIsMobile();
+    if (isMobile) {
+        setExplorerVisible(false)
+    }
 
     const [explorerAnchorEl, setExplorerAnchorEl] = useState<null | HTMLElement>(null);
     const explorerMenuOpen = Boolean(explorerAnchorEl);
