@@ -165,7 +165,7 @@ const Landing = () => {
                     <Box
                         sx={{
                             marginTop: '2rem',
-                            width: isMobile ? '120%' : '75%',
+                            width: { xs: '120%', sm: '100%', md: '100%', lg: '75%' },
                         }}>
                         <h1 style={{textAlign: 'left'}}>
                             Help
