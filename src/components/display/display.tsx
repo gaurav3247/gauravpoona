@@ -10,7 +10,7 @@ import Breadcrumb from "./components/breadcrumb";
 import Landing from "./components/landing";
 import About from "./components/about";
 import Projects from "./components/projects";
-import resume from './Gaurav-Poona Resume.pdf';
+import resume from './Gaurav Poona Software Developer Resume.pdf';
 
 import { useIsMobile } from "../../utils";
 
