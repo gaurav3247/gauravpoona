@@ -157,6 +157,7 @@ const Landing = () => {
                     <Box>
                         <p style={{fontSize: 16}}>
                             Welcome to my personal website! <br />
+                            This website is meant to look like an IDE with the files being the different sections of the website. <br />
                             Use the <span style={{ color: 'var(--accent-color)' }}>sidebar</span> to navigate through the different sections and learn more about me.
                         </p>
                     </Box>

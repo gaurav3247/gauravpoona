@@ -3,7 +3,7 @@ import { useState, createContext }from 'react';
 const TabsContext = createContext();
 
 export function TabsProvider({children}) {
-    const [tabs, setTabs] = useState(['landing.tsx']);
+    const [tabs, setTabs] = useState(['landing.tsx', 'about.tsx', 'projects.tsx', 'resume.pdf']);
     const [activeTab, setActiveTab] = useState(0);
 
     function addTab(tab) {
