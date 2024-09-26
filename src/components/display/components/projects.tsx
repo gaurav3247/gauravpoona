@@ -101,14 +101,14 @@ const Projects = () => {
             description: 'Decidophobia is an eCommerce website that aggregates and rates product information from numerous shopping websites. Aimed at simplifying decision-making for shoppers overwhelmed by choices, Decidophobia provides detailed reviews and ratings. By centralizing product data, it helps consumers make informed and confident purchasing decisions.',
             github: 'https://github.com/cfstar188/Decidophobia.com',
             images: ['decidophobia.webp', 'decidophobia_home.webp', 'decidophobia_search.webp', 'decidophobia_cart.webp', 'decidophobia_orderhistory.webp'],
-            techStack: 'Next.js, TypeScript, Django, PostgreSQL',
+            techStack: 'Next.js, Django, PostgreSQL, Docker'
         },
         {
             title: 'Easy Chef',
             description: 'Easy Chef is a web application for sharing and discovering recipes. You can explore a wide variety of recipes from different diets and ingredients worldwide. Additionally, you can share custom recipes and filter ideas to suit your preferences. Easy Chef also simplifies grocery shopping by automatically managing your grocery list.',
             github: 'https://github.com/gaurav3247/easychef',
             images: ['easychef.svg', 'easychef_demo.gif'],
-            techStack: 'React, JavaScript, Django, Sqlite',
+            techStack: 'React, Django, PostgreSQL',
             link: 'https://easychef-lte9.onrender.com/'
         },
         {
@@ -116,7 +116,7 @@ const Projects = () => {
             description: 'Kick Live is a web application for football enthusiasts that delivers real-time scores and detailed information from around the world. Users can explore match results, statistics, and track their favorite teams and leagues. With its comprehensive and user-friendly interface, Kick Live makes it easy to stay updated on all your football needs.',
             github: 'https://github.com/vp610/smarTrack',
             images: ['kicklive-white.webp'],
-            techStack: 'Next.js, Flask, Redis',
+            techStack: 'Next.js, Flask, Redis, Nginx',
             link: 'https://kick-live-nqnl.onrender.com/'
         },
         {
