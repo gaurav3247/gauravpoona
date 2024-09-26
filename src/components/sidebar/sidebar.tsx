@@ -30,7 +30,7 @@ type SidebarProps = {
 };
 
 const Sidebar = ({ isExplorerVisible, setExplorerVisible }: SidebarProps) => {
-    const { theme, setTheme } = useContext(ThemeContext);
+    const { theme, changeTheme } = useContext(ThemeContext);
     const { addTab } = useContext(TabsContext);
     const { activeSidebar, setActiveSidebar } = useContext(ActiveContext)
 
@@ -72,6 +72,10 @@ const Sidebar = ({ isExplorerVisible, setExplorerVisible }: SidebarProps) => {
             handleSettings(e)
         }
     }
+
+    // const toggleTheme = () => {
+    //     changeTheme(theme === 'dark' ? 'light' : 'dark');
+    // };
 
     return (
         <div className={(theme == 'dark') ? "sidebar" : 'sidebar-light'}>
@@ -143,7 +147,7 @@ const Sidebar = ({ isExplorerVisible, setExplorerVisible }: SidebarProps) => {
                 >
                     <MenuItem style={{padding: '0 0 0 0.5rem'}}>
                         <FormControlLabel control={<Switch checked={theme == 'dark'} onChange={() => {
-                            setTheme(theme == 'dark' ? 'light' : 'dark')
+                            changeTheme(theme === 'dark' ? 'light' : 'dark');
                         }}/>} label="Dark Mode" />
                     </MenuItem>
                     <Divider />
