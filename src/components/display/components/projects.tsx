@@ -12,7 +12,7 @@ interface Project{
     title: string;
     description: string;
     techStack: string;
-    github: string;
+    github?: string;
     link?: string;
     images: string[];
 }
@@ -78,9 +78,10 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, direction }) => {
                             </Typography>
                         </CardContent>
                         <CardActions sx={{justifyContent: 'center', bottom: 0}}>
+                            {project.github &&
                             <IconButton size="small" sx={{color:"#1c1c1c"}} href={project.github} target="_blank">
                                 <GitHubIcon fontSize="large"/>
-                            </IconButton>
+                            </IconButton>}
                             {project.link && 
                             <IconButton size="small" sx={{color:"#1c1c1c"}} href={project.link} target="_blank">
                                 <LaunchIcon fontSize="large"/>
@@ -125,6 +126,20 @@ const Projects = () => {
             github: 'https://github.com/gaurav3247/neural-net',
             images: ['neural-net.webp'],
             techStack: 'Numpy, Pandas, Matplotlib',
+        },
+        {
+            title: 'GauravSh',
+            description: 'GauravSh is a simple Linux shell I created in C to dive deeper into system programming and understand the inner workings of shells. It supports commands like ls, cd, pwd, and echo, along with features like piping and redirection.',
+            images: ['gaurav-sh.webp'],
+            techStack: 'C, Linux',
+        },
+        {
+            title: 'Personal Portfolio',
+            description: 'My personal portfolio website built using React and Material-UI. The website showcases my projects, skills, and experience. It also provides a brief introduction to who I am and what I do.',
+            github: 'https://github.com/gaurav3247/gauravpoona',
+            images: ['personal-website.webp'],
+            techStack: 'React, Next.js',
+            link: 'https://gaurav3247.github.io/gauravpoona/'
         }
     ]
 
