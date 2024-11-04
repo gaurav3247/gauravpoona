@@ -129,7 +129,7 @@ const Projects = () => {
         },
         {
             title: 'NanoSh',
-            description: 'NanoSh is a simple lightweight Linux shell I created in C to dive deeper into system programming and understand the inner workings of shells. It supports commands like ls, cd, pwd, and echo, along with features like piping and redirection.',
+            description: 'NanoSh is a fast and lightweight Linux shell I created in C to dive deeper into system programming and understand the inner workings of shells. It supports commands like ls, cd, pwd, and echo, along with features like piping and redirection.',
             images: ['gaurav-sh.webp'],
             techStack: 'C, Linux',
         },
