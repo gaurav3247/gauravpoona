@@ -128,8 +128,8 @@ const Projects = () => {
             techStack: 'Numpy, Pandas, Matplotlib',
         },
         {
-            title: 'GauravSh',
-            description: 'GauravSh is a simple Linux shell I created in C to dive deeper into system programming and understand the inner workings of shells. It supports commands like ls, cd, pwd, and echo, along with features like piping and redirection.',
+            title: 'NanoSh',
+            description: 'NanoSh is a simple Linux shell I created in C to dive deeper into system programming and understand the inner workings of shells. It supports commands like ls, cd, pwd, and echo, along with features like piping and redirection.',
             images: ['gaurav-sh.webp'],
             techStack: 'C, Linux',
         },
