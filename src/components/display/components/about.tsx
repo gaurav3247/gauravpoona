@@ -17,9 +17,8 @@ const About = () => {
             }}>
                 <Box sx={{ flex: '1 1 300px' }}>
                     <p>
-                        Hello! I'm <span style={{color: "var(--accent-color)", fontWeight: 'bolder'}}>Gaurav Poona</span>, a recent <span style={{color: "var(--accent-color)", fontWeight: 'bolder'}}>Computer Science and Mathematics</span> graduate
-                        from the <span style={{color: "var(--accent-color)", fontWeight: 'bolder'}}>University of Toronto</span>.
-                        I've always been passionate about technology and solving complex problems, which led me to dive into <span style={{color: "var(--accent-color)", fontWeight: 'bolder'}}>full-stack development</span> and <span style={{color: "var(--accent-color)", fontWeight: 'bolder'}}>machine learning</span>.
+                        Hello! I'm <span style={{color: "var(--accent-color)", fontWeight: 'bolder'}}>Gaurav Poona</span>, a <span style={{color: "var(--accent-color)", fontWeight: 'bolder'}}>Computer Science and Mathematics</span> graduate
+                        from the <span style={{color: "var(--accent-color)", fontWeight: 'bolder'}}>University of Toronto</span>, experienced in building <span style={{color: "var(--accent-color)", fontWeight: 'bolder'}}>Full-stack applications</span> and implementing <span style={{color: "var(--accent-color)", fontWeight: 'bolder'}}>machine learning models</span>.
                     </p>
                     <p>
                         Outside of coding, I enjoy playing football and video games. I'm a huge FC Barcelona fan, and I love watching or playing football in my free time.
@@ -30,7 +29,7 @@ const About = () => {
                         <span style={{color: "var(--accent-color)"}}>Languages:</span> Python, JavaScript, TypeScript, Java, C, SQL, HTML/CSS
                     </p>
                     <p>
-                        <span style={{color: "var(--accent-color)"}}>Frameworks:</span> React, Node.js, Flask, Django, TensorFlow, Keras, PyTorch, OpenCV
+                        <span style={{color: "var(--accent-color)"}}>Frameworks:</span> React, Node.js, Flask, Django, PyTorch, TensorFlow, OpenCV
                     </p>
                     <p>
                         <span style={{color: "var(--accent-color)"}}>Databases:</span> PostgreSQL, SQLite, Redis
