@@ -99,14 +99,14 @@ const Projects = () => {
     const projects: Project[] = [
         {
             title: 'Decidophobia',
-            description: 'Decidophobia is an eCommerce website that aggregates and rates product information from numerous shopping websites. Aimed at simplifying decision-making for shoppers overwhelmed by choices, Decidophobia provides detailed reviews and ratings. By centralizing product data, it helps consumers make informed and confident purchasing decisions.',
+            description: 'Decidophobia is an eCommerce website that aggregates and rates product information from numerous shopping websites. Aimed at simplifying decision-making for shoppers overwhelmed by choices, Decidophobia provides detailed reviews and ratings.',
             github: 'https://github.com/cfstar188/Decidophobia.com',
             images: ['decidophobia.webp', 'decidophobia_home.webp', 'decidophobia_search.webp', 'decidophobia_cart.webp', 'decidophobia_orderhistory.webp'],
             techStack: 'Next.js, Django, PostgreSQL, Docker'
         },
         {
             title: 'Easy Chef',
-            description: 'Easy Chef is a web application for sharing and discovering recipes. You can explore a wide variety of recipes from different diets and ingredients worldwide. Additionally, you can share custom recipes and filter ideas to suit your preferences. Easy Chef also simplifies grocery shopping by automatically managing your grocery list.',
+            description: 'Easy Chef is a web application for sharing and discovering recipes. You can explore a recipes created by other users and you can also share your own recipes with others. Easy Chef also simplifies grocery shopping by automatically managing your grocery list.',
             github: 'https://github.com/gaurav3247/easychef',
             images: ['easychef.svg', 'easychef_demo.gif'],
             techStack: 'React, Django, PostgreSQL',
@@ -114,7 +114,7 @@ const Projects = () => {
         },
         {
             title: 'Kick Live',
-            description: 'Kick Live is a web application for football enthusiasts that delivers real-time scores and detailed information from around the world. Users can explore match results, statistics, and track their favorite teams and leagues. With its comprehensive and user-friendly interface, Kick Live makes it easy to stay updated on all your football needs.',
+            description: 'Kick Live is a real-time football scores web app that provides match updates, stats, and league and player information for the top leagues around the world.',
             github: 'https://github.com/vp610/smarTrack',
             images: ['kicklive-white.webp'],
             techStack: 'Next.js, Flask, Redis, Nginx',
@@ -122,20 +122,20 @@ const Projects = () => {
         },
         {
             title: 'NeuralNet',
-            description: 'Neural Net is a Python framework for building and training neural networks on various datasets. Created primarily as a means to learn more about deep learning, it allows users to develop and train custom neural models and use optimization algorithms like stochastic descent, mini-batch descent, momentum, RMSProp, and Adam.',
+            description: 'Neural Net is a Python framework for building and training neural networks. Created to learn more about deep learning, it allows users to develop and train custom neural models and use optimizations like Adam and mini-batch descent.',
             github: 'https://github.com/gaurav3247/neural-net',
             images: ['neural-net.webp'],
             techStack: 'Numpy, Pandas, Matplotlib',
         },
         {
             title: 'NanoSh',
-            description: 'NanoSh is a fast and lightweight Linux shell I created in C to dive deeper into system programming and understand the inner workings of shells. It supports commands like ls, cd, pwd, and echo, along with features like piping and redirection.',
+            description: 'NanoSh is a fast and lightweight Linux shell I created in C to dive deeper into system programming. It supports basic commands like ls, cd, pwd, and echo, along with features like piping and redirection.',
             images: ['gaurav-sh.webp'],
             techStack: 'C, Linux',
         },
         {
             title: 'Personal Portfolio',
-            description: 'My personal portfolio website built using React and Material-UI. The website showcases my projects, skills, and experience. It also provides a brief introduction to who I am and what I do.',
+            description: 'My personal portfolio website showcasing my projects, skills, and experience. It also provides a brief introduction to who I am and what I do.',
             github: 'https://github.com/gaurav3247/gauravpoona',
             images: ['personal-website.webp'],
             techStack: 'React, Next.js',
